@@ -1,7 +1,8 @@
-# spidertag.vyvanse.beer
+# token.spidertag.vyvanse.beer
 
-The landing page for **SPIDERTAG**, the token for SPIDER-TAG wager matches in
-[RadRun](https://radrun.vyvanse.beer): web-slinger tag between Radbros, one-on-one, best of 3, for a stake.
+The page for **$SPIDERTAG**, the token for [SPIDERTAG](https://spidertag.vyvanse.beer), the Robinhood Chain game:
+web-slinger tag between Radbros, and its 1v1 wager matches, best of 3, for a stake. The game lives at
+spidertag.vyvanse.beer (its `/token` path redirects here); this page lives at https://token.spidertag.vyvanse.beer.
 
 A small static Vite site. No framework, no trackers, no cookies. The only thing it fetches from another
 origin is the DexScreener price, and only once a contract address is set.
@@ -30,7 +31,7 @@ shipped HTML has every link before any JS runs. `src/main.js` only does the copy
 
 ## Art
 
-The key art is RadRun's (Radbros #652, #723, #4764 and #2564, Retardios #555 and #85). The share card is
+The key art is the game's (Radbros #652, #723, #4764 and #2564, Retardios #555 and #85). The share card is
 `og/og.html` rendered with headless Chromium at 1200x630 into `public/og.jpg`.
 
 ## Licence
