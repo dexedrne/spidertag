@@ -12,7 +12,7 @@ const launched = () => Boolean(token.address.trim());
 const isMainnet = () => wager.stage === 'mainnet';
 
 export function renderPlay() {
-  const game = `<a class="btn btn-main" href="${esc(wager.game)}">Play RadRun</a>`;
+  const game = `<a class="btn btn-main" href="${esc(wager.game)}">Play SPIDERTAG</a>`;
   if (!wager.showLink) return game;
   const label = isMainnet() ? 'Play for SPIDERTAG' : 'Wager beta <span class="btn-tag">testnet</span>';
   return `${game}<a class="btn btn-alt" href="${esc(wager.url)}">${label}</a>`;
@@ -46,9 +46,9 @@ export function renderTokenLinks() {
 export function renderFooterLinks() {
   return [
     ext(site.home, 'vyvanse.beer'),
-    ext(wager.game, 'RadRun'),
+    ext(wager.game, 'SPIDERTAG'),
     ext(site.source, 'this site on GitHub'),
-    ext(site.gameSource, 'RadRun on GitHub'),
+    ext(site.gameSource, 'the game on GitHub'),
     ext(site.x, 'X'),
   ].join('<span class="dot" aria-hidden="true">·</span>');
 }

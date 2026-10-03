@@ -31,14 +31,15 @@ export const token = {
 export const wager = {
   // 'testnet' = the beta with test tokens; 'mainnet' = the vault holds the real coin.
   stage: 'testnet',
-  game: 'https://radrun.vyvanse.beer',
-  url: 'https://radrun.vyvanse.beer/?wager',
+  // The game (its /token path redirects to this page) and its wager beta, the unlisted ?wager page.
+  game: 'https://spidertag.vyvanse.beer',
+  url: 'https://spidertag.vyvanse.beer/?wager',
   // false hides the wager link (the game link stays).
   showLink: true,
 };
 
 export const site = {
-  url: 'https://spidertag.vyvanse.beer',
+  url: 'https://token.spidertag.vyvanse.beer',
   home: 'https://vyvanse.beer',
   source: 'https://github.com/dexedrne/spidertag',
   gameSource: 'https://github.com/dexedrne/radrun',
