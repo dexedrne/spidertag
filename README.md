@@ -32,8 +32,8 @@ shipped HTML has every link before any JS runs. `src/main.js` only does the copy
 
 ## Art
 
-The key art is the game's (Radbros #652, #723, #4764 and #2564, Retardios #555 and #85). The share card is
-`og/og.html` rendered with headless Chromium at 1200x630 into `public/og.jpg`.
+The key art is the game's: Radbros #652, #4764, #3704 and #3710, with #723 on the street. The share card is
+`og/og.html` rendered with headless Chromium at 1200x630 into `public/og2.jpg` (`og.jpg` is the same image, kept for old links).
 
 ## Licence
 
