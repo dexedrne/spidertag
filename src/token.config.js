@@ -3,9 +3,9 @@
 // Before launch: leave `address` empty. The page then shows "at launch" in place of every
 // token link, and the live stats strip stays hidden.
 //
-// After launch: paste the contract address. The pons, DexScreener and Blockscout links fill
+// After launch: paste the contract address. The DexScreener and Blockscout links fill
 // themselves in from it (set one by hand only if it lives somewhere else), the copy button
-// appears, and the stats strip starts reading DexScreener.
+// appears, and the stats strip starts reading DexScreener. The Buy link is set by hand.
 //
 // When the vault is on mainnet: set `wager.stage` to 'mainnet'.
 
@@ -22,7 +22,7 @@ export const token = {
 
   // Leave empty to derive from `address`.
   links: {
-    pons: '', //        https://www.ponsfamily.com/launchpad/<address>
+    trade: '', //       where to buy it; set by hand at launch (not derived)
     dexscreener: '', // https://dexscreener.com/robinhood/<address>
     explorer: '', //    https://robinhoodchain.blockscout.com/token/<address>
   },
@@ -50,7 +50,7 @@ export function tokenLinks(t = token) {
   const a = t.address.trim();
   const pick = (own, derived) => own || (a ? derived : '');
   return {
-    pons: pick(t.links.pons, `https://www.ponsfamily.com/launchpad/${a}`),
+    trade: t.links.trade,
     dexscreener: pick(t.links.dexscreener, `https://dexscreener.com/robinhood/${a}`),
     explorer: pick(t.links.explorer, `https://robinhoodchain.blockscout.com/token/${a}`),
   };

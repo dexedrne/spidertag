@@ -11,8 +11,9 @@ origin is the DexScreener price, and only once a contract address is set.
 
 Everything token-shaped lives in one file, [`src/token.config.js`](src/token.config.js):
 
-- `token.address`: empty until the coin exists. Set it and the pons, DexScreener and Robinhood Chain
+- `token.address`: empty until the coin exists. Set it and the DexScreener and Robinhood Chain
   Blockscout links, the copy button and the live stats strip all switch on.
+- `token.links.trade`: the Buy link, set by hand at launch.
 - `wager.stage`: `'testnet'` (the beta, test tokens) or `'mainnet'` once the vault holds the real coin.
 - `wager.showLink`: hides the wager link if set to `false`.
 
@@ -38,4 +39,4 @@ The key art is the game's (Radbros #652, #723, #4764 and #2564, Retardios #555 a
 
 Code: MIT ([LICENSE](LICENSE)). Art: Viral Public License ([LICENSE-ASSETS](LICENSE-ASSETS)).
 
-Not affiliated with or endorsed by Robinhood or pons. SPIDERTAG is a game token, not an investment.
+Not affiliated with or endorsed by Robinhood. SPIDERTAG is a game token, not an investment.

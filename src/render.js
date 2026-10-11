@@ -20,7 +20,7 @@ export function renderPlay() {
 
 export function renderStatus() {
   if (!launched()) {
-    return `<span class="ok">[ .. ]</span> token not launched yet · launches on pons, on ${esc(token.chain)}`;
+    return `<span class="ok">[ .. ]</span> token not launched yet · coming to ${esc(token.chain)}`;
   }
   return `<span class="ok">[ OK ]</span> live on ${esc(token.chain)} · <span class="mono">${esc(short(token.address))}</span>`;
 }
@@ -40,7 +40,7 @@ export function renderTokenLinks() {
   const addr = launched()
     ? `<div class="addr"><span class="addr-label">Contract</span><code class="addr-value" id="addr">${esc(token.address)}</code><button class="copy" type="button" data-copy="${esc(token.address)}">copy</button></div>`
     : `<div class="addr addr-off"><span class="addr-label">Contract</span><code class="addr-value">posted here at launch</code></div>`;
-  return `${addr}<div class="tlinks">${item(l.pons, 'pons')}${item(l.dexscreener, 'DexScreener')}${item(l.explorer, `${esc(token.chain)} Blockscout`)}</div>`;
+  return `${addr}<div class="tlinks">${item(l.trade, 'Buy')}${item(l.dexscreener, 'DexScreener')}${item(l.explorer, `${esc(token.chain)} Blockscout`)}</div>`;
 }
 
 export function renderFooterLinks() {
